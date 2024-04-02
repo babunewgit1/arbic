@@ -55,6 +55,8 @@ html {
 
 header {
   padding: 1rem 6.3rem;
+  position: relative;
+  z-index: 99;
 }
 
 .header_left ul li {
@@ -106,6 +108,7 @@ header {
 .header_right ul li img {
   display: inline-block;
   margin-left: 0.4rem;
+  width: 2rem;
 }
 
 header ul li {
@@ -121,5 +124,140 @@ header ul li:hover {
   display: inline-block;
   width: 16.5rem;
 }
-
 /* -- header area end -- */
+
+/* -- hero area start -- */
+.slide_one {
+  background-image: url(../images/herobg1.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.hero_left img {
+  display: block;
+  width: 98rem;
+}
+
+.hero_middle {
+  position: relative;
+  left: 37rem;
+  top: 10rem;
+}
+
+.hero_middle img {
+  display: block;
+  width: 15rem;
+}
+
+.hero_right h3 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.hero_right p {
+  font-size: 1.6rem;
+}
+
+.hero_right h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.hero_right h2 span {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.hero_right a {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  background-color: #603913;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: all 0.2s ease;
+}
+
+.hero_right a:hover {
+  opacity: 0.7;
+}
+
+.hero_right {
+  position: relative;
+  left: 35rem;
+  top: 14rem;
+}
+
+#hero {
+  margin-top: -8rem;
+}
+
+#hero_slider {
+  position: relative;
+}
+
+#hero_slider .swiper-pagination {
+  position: absolute;
+  left: 60.5rem !important;
+  bottom: 14rem !important;
+  display: inline-block !important;
+  width: auto !important;
+}
+
+#hero_slider .swiper-pagination-bullet {
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+}
+
+#hero_slider .swiper-pagination-bullet {
+  background-color: #603913 !important;
+  opacity: 0.2 !important;
+}
+
+#hero_slider .swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+.slide_two {
+  background-image: url(../images/herobg2.png);
+}
+
+.slide_two_left img {
+  width: 94rem;
+  padding-right: 25rem;
+  position: relative;
+  top: -2rem;
+}
+
+.slide_two {
+  padding-top: 18.5rem;
+}
+
+.hero_slide_2text {
+  top: 0rem;
+}
+
+.slide-three {
+  background-image: url(../images/herobg3.png);
+}
+
+.slide_three_left img {
+  width: 108rem;
+}
+
+.slide-three {
+  padding-top: 12.3rem;
+}
+
+.hero_slide_3text {
+  top: 6rem;
+}
+
+/* -- hero area end -- */

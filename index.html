@@ -21,6 +21,8 @@
     <!-- Include Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.rtl.css" />
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
     <!-- Main StyleSheet -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -78,6 +80,52 @@
     </header>
     <!-- header area end -->
 
+    <!-- hero area start -->
+    <section id="hero_slider">
+      <div id="hero" class="swiper mySwiper">
+        <div class="hero_wrapper swiper-wrapper">
+          <div class="slide_one swiper-slide">
+            <div class="hero_left">
+              <img src="images/hero_left.png" alt="" />
+            </div>
+            <div class="hero_middle">
+              <img src="images/hero_middle.svg" alt="" />
+            </div>
+            <div class="hero_right">
+              <h3>تشكيلة عيد الفطر</h3>
+              <p>إبتداَ من</p>
+              <h2>1,200 <span>ر.س</span></h2>
+              <a href="#">أطلب مسبقاَ</a>
+            </div>
+          </div>
+          <div class="slide_one swiper-slide slide_two">
+            <div class="hero_left slide_two_left">
+              <img src="images/banar2.png" alt="" />
+            </div>
+            <div class="hero_right hero_slide_2text">
+              <h3>تشكيلة عيد الفطر</h3>
+              <p>إبتداَ من</p>
+              <h2>1,200 <span>ر.س</span></h2>
+              <a href="#">أطلب مسبقاَ</a>
+            </div>
+          </div>
+          <div class="slide_one swiper-slide slide-three">
+            <div class="hero_left slide_three_left">
+              <img src="images/banar3.png" alt="" />
+            </div>
+            <div class="hero_right hero_slide_3text">
+              <h3>تشكيلة عيد الفطر</h3>
+              <p>إبتداَ من</p>
+              <h2>1,200 <span>ر.س</span></h2>
+              <a href="#">أطلب مسبقاَ</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- hero area end -->
+
     <!-- Main jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
 
@@ -89,5 +137,17 @@
 
     <!-- Custom jQuery -->
     <script src="js/scripts.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
