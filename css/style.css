@@ -382,6 +382,7 @@ span.discount {
   background: #e32c3f;
   padding: 0.3rem 1.2rem;
   font-weight: 700;
+  direction: ltr;
 }
 
 .plone_middle img {
@@ -426,6 +427,10 @@ span.lastpara {
 
 #plone {
   padding-top: 2.3rem;
+}
+
+.plfive {
+  padding-bottom: 2.3rem;
 }
 
 .plone_middle_wrapper {
@@ -629,5 +634,361 @@ span.lastpara {
 .plfour {
   padding-top: 2.3rem !important;
 }
-
 /* -- plfour area end -- */
+
+/* -- discount area start -- */
+#discount {
+  background-color: #fff;
+}
+
+.discount_wrapper {
+  padding: 2.4rem 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.5rem;
+}
+
+.discount_right,
+.discount_left {
+  position: relative;
+}
+
+.discount_right img {
+  display: block;
+  width: 100%;
+}
+
+.discount_percent p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #d21e32;
+  margin-bottom: 0;
+}
+
+.discount_percent span {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 1.8rem;
+  background: #e32c3f;
+  padding: 0.3rem 1.2rem;
+  font-weight: 700;
+  direction: ltr;
+}
+
+.discount_percent {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.dr_cnt,
+.dl_cnt {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  right: 5rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.dr_cnt p,
+.dl_cnt p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.dr_cnt a,
+.dl_cnt a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  background-color: #603913;
+  display: inline-block;
+  width: 12rem;
+  transition: all 0.2s ease;
+}
+
+.dr_cnt a:hover,
+.dl_cnt a:hover {
+  opacity: 0.7;
+}
+
+.dl_cnt {
+  height: 100%;
+}
+/* -- discount area end -- */
+
+/* -- video area start -- */
+#video {
+  position: relative;
+}
+
+#video img {
+  display: block;
+  width: 100%;
+}
+
+.video_text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.video_text p {
+  color: #fff;
+  font-family: Tajawal;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.video_text a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.8rem 4.6rem;
+  border-radius: 1rem;
+  background-color: #603913;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.video_text a:hover {
+  opacity: 0.7;
+}
+/* -- video area end -- */
+
+/* -- golden area start -- */
+.golden_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.golden_right {
+  background-color: #e2ffd4;
+}
+
+.golden_right_wrapper {
+  height: 100%;
+  width: 65%;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.golden_right_wrapper h5 {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.golden_right_wrapper p {
+  text-align: right;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+.golden_right_wrapper a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  background-color: #603913;
+  display: inline-block;
+  transition: all 0.2s ease;
+  max-width: 14rem;
+  text-align: center;
+}
+
+.golden_right_wrapper a:hover {
+  opacity: 0.7;
+}
+
+.discount_left img {
+  display: block;
+  width: 100%;
+}
+/* -- golden area end -- */
+
+/* -- customer area start -- */
+.customer_wrapper {
+  padding: 0 18.2rem;
+}
+
+.customer_wrapper > h3 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.customer_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 2.6rem;
+}
+
+.customer_box img {
+  display: block;
+  width: 100%;
+}
+
+#customer {
+  padding-top: 7rem;
+}
+
+#pslider img {
+  width: 100%;
+}
+
+#pbslider img {
+  width: 62%;
+}
+
+.mySwiper_four img {
+  width: 100% !important;
+}
+
+/* -- customer area end -- */
+
+/* -- footer area start -- */
+
+footer {
+  padding: 7rem 26.3rem;
+  padding-bottom: 2rem;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo a img {
+  display: inline-block;
+  width: 14.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.footer_logo p {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.footer_visa ul li a {
+  color: #603913;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.footer_visa ul li img {
+  display: inline-block;
+  width: 1.1rem;
+  margin-right: 1rem;
+}
+
+.footer_visa ul li:last-child {
+  margin-top: 1rem;
+}
+
+.footer_visa ul li img.world {
+  display: inline-block;
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.payment_method {
+  margin-top: 2rem;
+}
+
+.payment_method p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.payment_method img {
+  display: block;
+  width: 28.6rem;
+}
+
+h4.footer_heading {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-bottom: 1.6rem;
+}
+
+.footer_link ul.footer_socail li {
+  display: inline-block;
+}
+
+.footer_link ul.footer_socail li a {
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.footer_link ul.footer_socail li a img {
+  display: inline-block;
+  width: 2.3rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footer_link ul.footer_socail li a:hover {
+  opacity: 0.7;
+}
+
+.footer_link ul li a {
+  display: inline-block;
+  color: #603913;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.footer_link ul li a:hover {
+  opacity: 0.7;
+}
+
+.golden_left img {
+  display: block;
+  width: 100%;
+}
+
+/* -- footer area end -- */
