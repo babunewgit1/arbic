@@ -126,6 +126,125 @@
     </section>
     <!-- hero area end -->
 
+    <!-- pslider area start -->
+    <section id="pslider">
+      <div class="pslider_wrapper swiper mySwiper_two">
+        <div class="pslider_cnt_wrapper swiper-wrapper">
+          <div class="pslider_box swiper-slide">
+            <p>عيد الفطر</p>
+            <img src="images/p1.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_two swiper-slide">
+            <p>حمداً على السلامة</p>
+            <img src="images/p2.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_three swiper-slide">
+            <p>تراثنا</p>
+            <img src="images/p3.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_four swiper-slide">
+            <p>ميلاد سعيد</p>
+            <img src="images/p4.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_five swiper-slide">
+            <p>عيد الأم</p>
+            <img src="images/p5.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_six swiper-slide">
+            <p>تهنئة رمضان</p>
+            <img src="images/p6.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_seven swiper-slide">
+            <p>عيد الأم</p>
+            <img src="images/p7.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_eight swiper-slide">
+            <p>عيد الفطر</p>
+            <img src="images/p8.png" alt="" />
+          </div>
+          <div class="pslider_box swiper-slide">
+            <p>عيد الفطر</p>
+            <img src="images/p1.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_two swiper-slide">
+            <p>حمداً على السلامة</p>
+            <img src="images/p2.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_three swiper-slide">
+            <p>تراثنا</p>
+            <img src="images/p3.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_four swiper-slide">
+            <p>ميلاد سعيد</p>
+            <img src="images/p4.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_five swiper-slide">
+            <p>عيد الأم</p>
+            <img src="images/p5.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_six swiper-slide">
+            <p>تهنئة رمضان</p>
+            <img src="images/p6.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_seven swiper-slide">
+            <p>عيد الأم</p>
+            <img src="images/p7.png" alt="" />
+          </div>
+          <div class="pslider_box pbox_eight swiper-slide">
+            <p>عيد الفطر</p>
+            <img src="images/p8.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pslider area end -->
+
+    <!-- plone area start -->
+    <section id="plone">
+      <div class="p1one_wrapper">
+        <div class="plone_left">
+          <img class="bigImg" src="images/pl1.png" alt="" />
+          <button><img src="images/plcard.svg" alt="" /></button>
+        </div>
+        <div class="plone_middle plone_middle_two" dir="ltr">
+          <div class="plone_middle_wrapper text-center">
+            <span dir="rtl" class="discount">- 35%</span>
+            <img dir="rtl" src="images/pl2.png" alt="" />
+            <p dir="rtl" class="arbtext">علبة بستاني المميزة أسود كبير</p>
+            <span dir="rtl" class="lastpara">30 حبة / 115 ريال</span>
+          </div>
+          <div
+            class="plone_middle_wrapper plone_wrapper_next text-center new_hover"
+          >
+            <div class="box_one box_first bg-white">
+              <span dir="rtl" class="discount">- 35%</span>
+              <img dir="rtl" src="images/pl2.png" alt="" />
+              <p dir="rtl" class="arbtext">علبة بستاني المميزة أسود كبير</p>
+              <span dir="rtl" class="lastpara">30 حبة / 115 ريال</span>
+            </div>
+            <div class="box_one box_two bg-white">
+              <span dir="rtl" class="discount">- 35%</span>
+              <img dir="rtl" src="images/pl2.png" alt="" />
+              <p dir="rtl" class="arbtext">علبة بستاني المميزة أسود كبير</p>
+              <span dir="rtl" class="lastpara">30 حبة / 115 ريال</span>
+            </div>
+          </div>
+        </div>
+        <div class="plone_right">
+          <div class="plone_right_top">
+            <img class="mb-3" src="images/pl3.png" alt="" />
+            <p class="arbtext mb-1">علبة بستاني المميزة أبيض وسط</p>
+            <span class="lastpara">30 حبة / 115 ريال</span>
+          </div>
+          <div class="plone_right_top">
+            <img class="mb-4" src="images/pl4.png" alt="" />
+            <span class="lastpara">إكتشف طعم الشوكولاتة الفاخرة</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- plone area end -->
+
     <!-- Main jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
 
@@ -146,6 +265,19 @@
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
+
+    <script>
+      var swiperTwo = new Swiper(".mySwiper_two", {
+        slidesPerView: 8,
+        spaceBetween: 15,
+        autoplay: {
+          delay: 5000,
         },
       });
     </script>
