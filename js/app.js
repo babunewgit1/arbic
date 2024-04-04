@@ -1,7 +1,9 @@
 const tigger = document.querySelectorAll("[handel]");
 const cmodal = document.querySelectorAll(".cmodal");
 const closeModal = document.querySelectorAll(".closeModal");
-const body = document.querySelector("body");
+const cartbtn = document.querySelectorAll(".cmitem_link button");
+const cartBox = document.querySelector(".card");
+const cartClose = document.querySelector(".card_heading_left span");
 
 tigger.forEach((item) => {
   item.addEventListener("click", () => {
@@ -12,10 +14,8 @@ tigger.forEach((item) => {
 
       if (tiggerAttr === ctimeAttr) {
         citem.classList.add("openModal");
-        body.classList.add("overlay");
       } else {
         citem.classList.remove("openModal");
-        body.classList.remove("overlay");
       }
     });
   });
@@ -30,11 +30,17 @@ closeModal.forEach((item) => {
 
       if (closeAttr === ctimeAttr) {
         citem.classList.remove("openModal");
-        body.classList.remove("overlay");
-      } else {
-        citem.classList.add("openModal");
-        body.classList.add("overlay");
       }
     });
   });
+});
+
+cartbtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    cartBox.classList.add("openCart");
+  });
+});
+
+cartClose.addEventListener("click", () => {
+  cartBox.classList.remove("openCart");
 });

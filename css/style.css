@@ -1434,6 +1434,7 @@ h4.footer_heading {
 .cmodal.openModal {
   transform: scale(1);
   visibility: visible;
+  background: rgba(0,0,0,.5);
 }
 
 button.disabled {
@@ -1459,4 +1460,114 @@ button.disabled {
 /* -- modal area end -- */
 
 /* -- card area start -- */
+.card {
+  width: 37rem;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 99999;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  padding: 3.5rem 2.2rem;
+  transition: all 0.4s ease;
+}
+
+.card_heading_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_heading_left p,
+.card_heading_left span {
+  color: #603913;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.card_heading_left img {
+  display: inline-block;
+  width: 1.4rem;
+  margin-left: 1rem;
+}
+
+.card_heading_left span {
+  cursor: pointer;
+}
+
+.cp_one {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cp_one_right {
+  width: 9rem;
+}
+
+.cp_one_right img {
+  width: 100%;
+}
+
+.cp_one_left p {
+  margin-bottom: 0;
+  color: #603913;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cp_one_left p:last-child {
+  font-size: 1.2rem;
+}
+
+.cp_one_left p:last-child span {
+  font-weight: 400;
+}
+
+.card_product {
+  padding-top: 4rem;
+  height: 70vh;
+}
+
+.card_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_btn a {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 0.8rem 3.8rem;
+  background-color: #603913;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.card_btn a:last-child {
+  background-color: transparent;
+  border-color: #603913;
+  color: #603913;
+}
+
+.card_btn a:last-child:hover {
+  background-color: #603913;
+  color: #fff;
+}
+
+.openCart {
+  left: 0;
+}
+
 /* -- card area end -- */
