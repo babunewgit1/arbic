@@ -1428,13 +1428,13 @@ h4.footer_heading {
   transform: scale(0);
   transform-origin: center center;
   visibility: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 
 .cmodal.openModal {
   transform: scale(1);
   visibility: visible;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 button.disabled {
@@ -1569,5 +1569,55 @@ button.disabled {
 .openCart {
   left: 0;
 }
-
 /* -- card area end -- */
+
+/* -- smheader area start -- */
+.header_wrapper {
+  padding: 0px 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smheader_right button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.smheader_right button img {
+  display: inline-block;
+  width: 2.4rem;
+}
+
+.smheader_middle a {
+  display: inline-block;
+  width: 12rem;
+}
+
+.smheader_left ul li {
+  display: inline-block;
+}
+
+.smheader_left ul li a {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.smheader_left ul li a img {
+  display: inline-block;
+  width: 2.4rem;
+}
+
+.smheader_middle {
+  margin-left: -5rem;
+}
+
+#header {
+  padding-top: 2rem;
+  position: relative;
+  z-index: 99;
+}
+
+/* -- smheader area end -- */
