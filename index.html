@@ -45,7 +45,13 @@
           <div class="col-md-4 p-0">
             <div class="header_right">
               <ul>
-                <li><img src="images/bar.svg" alt="" /> القائمة</li>
+                <li
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <img src="images/bar.svg" alt="" /> القائمة
+                </li>
                 <li><img src="images/sc.svg" alt="" /> إبدأ البحث</li>
               </ul>
             </div>
@@ -82,7 +88,7 @@
 
     <!-- hero area start -->
     <section id="hero_slider">
-      <div id="hero" class="swiper mySwiper">
+      <div id="hero" class="swiper mySwiper swipperOne">
         <div class="hero_wrapper swiper-wrapper">
           <div class="slide_one swiper-slide">
             <div class="hero_left">
@@ -207,7 +213,7 @@
           <button><img src="images/plcard.svg" alt="" /></button>
         </div>
         <div class="plone_middle plone_middle_two" dir="ltr">
-          <div class="plone_middle_wrapper text-center">
+          <div handel="mone" class="plone_middle_wrapper text-center">
             <span dir="rtl" class="discount">- 35%</span>
             <img dir="rtl" src="images/pl2.png" alt="" />
             <p dir="rtl" class="arbtext">علبة بستاني المميزة أسود كبير</p>
@@ -572,7 +578,7 @@
 
     <!-- video area start -->
     <section id="video">
-      <img src="images/video.png" alt="" />
+      <video autoplay loop muted src="media/video.mp4"></video>
       <div class="video_text">
         <p>الشوكولاته المخصصة</p>
         <a href="#">إبدأ التصميم</a>
@@ -729,6 +735,291 @@
     </footer>
     <!-- footer area end -->
 
+    <!-- --offcanvas area start-- -->
+    <div
+      class="offcanvas side_offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="close_modal">
+          <p type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="images/close.svg" alt="" />أغلاق
+          </p>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas_link">
+          <ul>
+            <li><a href="#">تشكيلة العيد الفاخرة</a></li>
+            <li><a href="#">تشكيلة رمضان الفاخرة</a></li>
+            <li><a href="#">المنتجات المميزة</a></li>
+            <li><a href="#">الصواني الفاخرة</a></li>
+            <li><a href="#">المنتجات المخصصة</a></li>
+            <li><a href="#">منتجات الأطفال</a></li>
+            <li><a href="#">منتجات الاحتفالات</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- --offcanvas area end-- -->
+
+    <!-- modal area start -->
+    <div id="mone" class="cmodal">
+      <div class="cmodal_wrapper">
+        <div class="cmodal_right_wrapper">
+          <div class="cmodal_right">
+            <h4 class="text-center">إكتشف أكثر</h4>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper mySwiper five">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl1.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض وسط</p>
+                    <span>30 حبة / 115 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl2.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl3.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أسود صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl1.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض وسط</p>
+                    <span>30 حبة / 115 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl2.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl3.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أسود صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl1.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض وسط</p>
+                    <span>30 حبة / 115 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl2.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl3.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أسود صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl1.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض وسط</p>
+                    <span>30 حبة / 115 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl2.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أبيض صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swpiper_img">
+                    <img src="images/sl3.png" alt="" />
+                  </div>
+                  <div class="slide_cnt text-center mt-2">
+                    <p>علبة بستاني المميزة أسود صغير</p>
+                    <span>12 حبة / 58 ريال</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="cmwrapping">
+          <div class="cmodal_left">
+            <div class="cmodal_left_slider">
+              <div class="swiper mySwiper swipper_six">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/ls1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/ls1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/ls1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-paginationone"></div>
+            </div>
+            <div class="cmodal_left_cnt">
+              <div class="cmheading">
+                <h4>علبة بستاني المميزة أسود وسط</h4>
+                <div class="cmheading_box">
+                  <div class="cmheading_box_right">
+                    <p class="toppara">30 حبة / <span> 115 ريال</span></p>
+                    <p class="bottompara"><span></span>متوفر</p>
+                  </div>
+                </div>
+                <div class="cmitem_make">
+                  <div class="cmitem_make_right_wrapper">
+                    <div class="cmitem_box">
+                      <button class="increment-btn">+</button>
+                      <span class="number">1</span>
+                      <button class="decrement-btn">-</button>
+                    </div>
+                    <div class="cmitem_link">
+                      <button>أضف إلى السلة</button>
+                    </div>
+                  </div>
+                  <p>
+                    <img src="images/warning.svg" alt="" />أقل كمية للطلب:1 قطع
+                    | الطلب يحتاج إلى:1 أيام
+                  </p>
+                </div>
+                <div class="cmaccoridien">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          <img src="images/copy.svg" alt="" />
+                          أوصاف العلبة
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <p>
+                            علبتنا الذهبية الأكثر أناقة تحتوي على 80 حبة من
+                            شوكولاتة الحليب اللذيذة الساحرة مع الحشوات الشهية من
+                            البسكويت والمكسرات. إنها الهدية المثالية لمن تهتم
+                            بهم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          <img src="images/cpy.svg" alt="" />
+                          خصائص المنتج
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="acc_text">
+                            <div class="acctext_left">
+                              <p>أبعاد العلبة:</p>
+                              <ul>
+                                <li>الارتفاع: 70 ملم</li>
+                                <li>العرض: 450 ملم</li>
+                                <li>الطول: 300 ملم</li>
+                              </ul>
+                            </div>
+                            <div class="acctext_left">
+                              <p>أبعاد الشوكولاته:</p>
+                              <ul>
+                                <li>عدد قطع الشوكولاتة :-Biscuits</li>
+                                <li>Nuts حبه</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button closeM="mone" class="closeModal">
+          <img src="images/closex.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <!-- modal area end -->
+
+    <!-- card area start -->
+    <!-- card area end -->
+
     <!-- Main jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
 
@@ -739,12 +1030,12 @@
     <script src="https://kit.fontawesome.com/7749c9f08a.js"></script>
 
     <!-- Custom jQuery -->
-    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
 
     <script src="js/swiper-bundle.min.js"></script>
 
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".swipperOne", {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -778,13 +1069,69 @@
       });
     </script>
     <script>
-      var swiperThree = new Swiper(".mySwiper_four", {
+      var swiperFours = new Swiper(".mySwiper_four", {
         slidesPerView: 2.2,
         spaceBetween: 0,
         loop: true,
         autoplay: {
           delay: 6000,
         },
+      });
+    </script>
+
+    <script>
+      var swiperFive = new Swiper(".five", {
+        direction: "vertical",
+        slidesPerView: 3,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script>
+      var swipersix = new Swiper(".swipper_six", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-paginationone",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      const incrementBtns = document.querySelectorAll(".increment-btn");
+      const decrementBtns = document.querySelectorAll(".decrement-btn");
+
+      incrementBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const numberElement = btn.nextElementSibling;
+          let currentValue = parseInt(numberElement.textContent);
+          currentValue++;
+          numberElement.textContent = currentValue;
+
+          if (currentValue > 1) {
+            decrementBtns.forEach((decrementBtn) => {
+              decrementBtn.classList.remove("disabled");
+            });
+          }
+        });
+      });
+
+      decrementBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const numberElement = btn.previousElementSibling;
+          let currentValue = parseInt(numberElement.textContent);
+          if (currentValue > 1) {
+            currentValue--;
+            numberElement.textContent = currentValue;
+          } else {
+            btn.classList.add("disabled");
+          }
+        });
       });
     </script>
   </body>

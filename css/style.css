@@ -729,11 +729,15 @@ span.lastpara {
 /* -- video area start -- */
 #video {
   position: relative;
+  height: 39.2rem;
+  overflow: hidden;
 }
 
-#video img {
+#video video {
   display: block;
   width: 100%;
+  position: relative;
+  top: -15rem;
 }
 
 .video_text {
@@ -992,3 +996,467 @@ h4.footer_heading {
 }
 
 /* -- footer area end -- */
+
+/* --offcanvas area start-- */
+
+.close_modal p {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.side_offcanvas {
+  padding-right: 4rem;
+}
+
+.side_offcanvas .offcanvas-header {
+  padding-right: 0;
+  padding-top: 2rem;
+}
+
+.side_offcanvas .offcanvas-body {
+  padding-right: 0;
+}
+
+.side_offcanvas.offcanvas.offcanvas-start {
+  width: 31rem;
+}
+
+.offcanvas_link ul li a {
+  display: inline-block;
+  color: #603913;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 1rem 0rem;
+  transition: all 0.2s ease;
+}
+
+.offcanvas_link ul li a:hover {
+  opacity: 0.7;
+}
+/* --offcanvas area end-- */
+
+/* -- modal area start -- */
+
+.cmodal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.cmodal_wrapper {
+  width: 159rem;
+  height: 88rem;
+  background-color: #ffffff;
+  border-radius: 4rem;
+}
+
+.five {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cmodal_right_wrapper {
+  height: 88rem;
+  padding: 3rem 3.6rem;
+  background-color: #f4f4f4;
+  position: relative;
+  border-radius: 0rem 4rem 4rem 0;
+}
+
+.cmodal_right {
+  height: 70rem;
+  position: relative;
+}
+
+.cmodal_wrapper {
+  display: grid;
+  grid-template-columns: 30.7rem calc(100% - 30.7rem);
+  position: relative;
+}
+
+.cmodal_right h4 {
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 4.5rem;
+}
+
+.swpiper_img {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.swpiper_img img {
+  display: block;
+  width: 100%;
+}
+
+.slide_cnt p {
+  color: #603913;
+  font-size: 1.4998rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.slide_cnt span {
+  display: inline-block;
+  color: #603913;
+  font-size: 1.4998rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.cmodal .swiper-button-next {
+  top: inherit;
+  bottom: -12rem;
+  left: 46%;
+  right: inherit;
+}
+
+.cmodal .swiper-button-next:after {
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  background-image: url(../images/down.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cmodal .swiper-button-prev:after {
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  background-image: url(../images/down.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.cmodal .swiper-button-prev {
+  bottom: inherit;
+  top: 6rem;
+  left: 46%;
+  right: inherit;
+}
+
+.cmodal .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.cmodal_left_slider img {
+  display: block;
+  width: 100%;
+}
+
+.cmodal_left {
+  display: grid;
+  grid-template-columns: 64.15rem 64.15rem;
+}
+
+.swiper-paginationone {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.cmodal_left .swiper-pagination-bullet {
+  background-color: #603913;
+}
+
+.cmodal_left_slider {
+  padding-right: 4rem;
+}
+
+.cmodal_left_cnt {
+  padding: 0px 4rem;
+  padding-left: 10rem;
+}
+
+.cmheading h4 {
+  text-align: right;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.cmheading_box_right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cmheading_box_right p.toppara {
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.cmheading_box_right p.toppara span {
+  font-weight: 700;
+}
+
+.cmheading_box_right p.bottompara {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  padding-right: 1.5rem;
+}
+
+.cmheading_box_right p.bottompara {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.cmheading_box_right p.bottompara span {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #84b740;
+  border-radius: 50%;
+}
+
+.cmheading_box {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.cmitem_make_right_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cmitem_box {
+  background-color: rgba(96, 57, 19, 0.1);
+  border-radius: 1.2rem;
+}
+
+.cmitem_box button {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #603913;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1rem;
+  border: 1px solid #603913;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.cmitem_box button:hover {
+  background-color: #603913;
+  color: #fff;
+}
+
+.cmitem_box span {
+  display: inline-block;
+  color: #603913;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  width: 6rem;
+  text-align: center;
+}
+
+.cmitem_link button {
+  display: inline-block;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  width: 24.5rem;
+  padding: 0.8rem 1.6rem;
+  justify-content: center;
+  background-color: #603913;
+  border-radius: 1rem;
+  transition: all 0.2s ease;
+}
+
+.cmitem_link button:hover {
+  opacity: 0.7;
+}
+
+.cmitem_make p {
+  margin-bottom: 0;
+  color: #603913;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+.cmitem_make p img {
+  display: inline-block;
+  width: 1.6rem;
+  margin-left: 1rem;
+}
+
+.cmitem_make {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.cmaccoridien .accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+  border: 0;
+  color: #603913;
+}
+
+.cmaccoridien .accordion-button img {
+  display: inline-block;
+  width: 1.8rem;
+  margin-left: 1rem;
+}
+
+.cmaccoridien .accordion-button {
+  color: #603913;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  border-radius: 0;
+}
+
+.cmaccoridien .accordion-item:first-of-type .accordion-button {
+  border-radius: 0 !important;
+}
+
+.cmaccoridien .accordion-item {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.cmaccoridien .accordion-item button {
+  padding-right: 0 !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.cmaccoridien .accordion-button::after {
+  background-image: url(../images/down.svg) !important;
+}
+
+.cmaccoridien .accordion-body p {
+  font-size: 1.6rem;
+  color: #603913;
+}
+
+.acc_text {
+  display: flex;
+  gap: 15rem;
+}
+
+.acctext_left p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #603913;
+}
+
+.acctext_left ul li {
+  font-size: 1.6rem;
+  color: #603913;
+  font-weight: 400;
+}
+
+.cmwrapping {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.closeModal {
+  position: absolute;
+  border: 0;
+  outline: none;
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  width: 10rem;
+  top: 3rem;
+  left: 3rem;
+}
+
+.cmodal {
+  transform: scale(0);
+  transform-origin: center center;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.cmodal.openModal {
+  transform: scale(1);
+  visibility: visible;
+}
+
+button.disabled {
+  opacity: 0.3;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+/* -- modal area end -- */
+
+/* -- card area start -- */
+/* -- card area end -- */
