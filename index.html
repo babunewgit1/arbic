@@ -87,8 +87,8 @@
     <!-- header area end -->
 
     <!-- smheader area start -->
-    <section id="header">
-      <div class="header_wrapper">
+    <section id="header" class="d-block d-lg-none">
+      <div class="smheader_wrapper">
         <div class="smheader_right">
           <button><img src="images/bar.svg" alt="" /></button>
         </div>
@@ -113,7 +113,7 @@
     <!-- smheader area end -->
 
     <!-- hero area start -->
-    <section id="hero_slider">
+    <section id="hero_slider" class="d-none d-lg-block">
       <div id="hero" class="swiper mySwiper swipperOne">
         <div class="hero_wrapper swiper-wrapper">
           <div class="slide_one swiper-slide">
@@ -157,6 +157,54 @@
       </div>
     </section>
     <!-- hero area end -->
+
+    <!-- smhero area start -->
+    <section id="smhero" class="d-block d-lg-none">
+      <div class="smhero_wrapper">
+        <div class="swiper mySwipersm">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="smhero_item">
+                <div class="smhero_item_pic">
+                  <img src="images/sm1.png" alt="" />
+                </div>
+                <div class="smhero_cnt text-center">
+                  <h3>تشكيلة عيد الفطر</h3>
+                  <p>إبتداَ من <strong>1,200</strong> <span>ر.س</span></p>
+                  <a href="#">أطلب مسبقاً</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="smhero_item">
+                <div class="smhero_item_pic">
+                  <img src="images/sm2.png" alt="" />
+                </div>
+                <div class="smhero_cnt text-center">
+                  <h3>تشكيلة الصواني الفاخرة</h3>
+                  <p>إبتداَ من<strong>899</strong> <span>ر.س</span></p>
+                  <a href="#">أطلب مسبقاً</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="smhero_item">
+                <div class="smhero_item_pic">
+                  <img src="images/sm3.png" alt="" />
+                </div>
+                <div class="smhero_cnt text-center">
+                  <h3>تشكيلة الصواني الفاخرة</h3>
+                  <p>إبتداَ من<strong>400</strong> <span>ر.س</span></p>
+                  <a href="#">أطلب مسبقاً</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination smhero_pagi"></div>
+        </div>
+      </div>
+    </section>
+    <!-- smhero area end -->
 
     <!-- pslider area start -->
     <section id="pslider">
@@ -378,15 +426,15 @@
     <section id="plone" class="pltwo">
       <div class="p1one_wrapper">
         <div class="pltwo_left">
-          <div class="plone_right">
+          <div class="plone_right plxright">
             <div class="plone_right_top">
               <span class="discount">- 20%</span>
-              <img class="mb-3" src="images/plt1.png" alt="" />
+              <img class="mb-3" src="images/tx.png" alt="" />
               <p class="arbtext mb-1">لوح شوكولاتة أبيض وردة كبير</p>
               <span class="lastpara">1 حبة / 25 ريال</span>
             </div>
             <div class="plone_right_top">
-              <img class="mb-4" src="images/plt2.png" alt="" />
+              <img class="mb-4" src="images/t6.png" alt="" />
               <p class="arbtext mb-1">علبة بستاني المميزة أسود صغير</p>
               <span class="lastpara">12 حبة / 58 ريال</span>
             </div>
@@ -453,7 +501,7 @@
           </div>
         </div>
         <div class="pltwo_left">
-          <div class="plone_right">
+          <div class="plone_right plthreex">
             <div class="plone_right_top ttimages">
               <span class="discount">- 20%</span>
               <img class="mb-3" src="images/t5.png" alt="" />
@@ -540,6 +588,8 @@
               <span class="lastpara">12 حبة / 58 ريال</span>
             </div>
           </div>
+        </div>
+        <div class="pltwo_left">
           <div class="pltwo_middle_one">
             <div class="plone_right_top">
               <span class="discount">جديد</span>
@@ -548,9 +598,7 @@
               <span class="lastpara">30 حبة / 125 ريال</span>
             </div>
           </div>
-        </div>
-        <div class="pltwo_left">
-          <div class="plone_right">
+          <div class="plone_right lastblocks">
             <div class="plone_right_top ttimages">
               <span class="discount">- 20%</span>
               <img class="mb-3" src="images/fv5.png" alt="" />
@@ -662,20 +710,34 @@
       <div class="customer_wrapper text-center">
         <h3>زبائننا</h3>
         <div class="customer_list">
-          <div class="customer_box">
-            <img src="images/cs1.png" alt="" />
-          </div>
-          <div class="customer_box">
-            <img src="images/cs2.png" alt="" />
-          </div>
-          <div class="customer_box">
-            <img src="images/cs3.png" alt="" />
-          </div>
-          <div class="customer_box">
-            <img src="images/cs4.png" alt="" />
-          </div>
-          <div class="customer_box">
-            <img src="images/cs5.png" alt="" />
+          <div class="swiper last_slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="customer_box">
+                  <img src="images/cs1.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_box">
+                  <img src="images/cs2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_box">
+                  <img src="images/cs3.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_box">
+                  <img src="images/cs4.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="customer_box">
+                  <img src="images/cs5.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -685,26 +747,28 @@
     <!-- footer area start -->
     <footer>
       <div class="footer_wrapper">
-        <div class="footer_link">
-          <h4 class="footer_heading">تسوق</h4>
-          <ul>
-            <li><a href="#">المنتجات المخصصة</a></li>
-            <li><a href="#">الصواني الفاخرة</a></li>
-            <li><a href="#">منتجات الأطفال</a></li>
-            <li><a href="#">للاحتفالات</a></li>
-            <li><a href="#">تشكيلة رمضان الفاخرة</a></li>
-          </ul>
+        <div class="footer_link-group">
+          <div class="footer_link">
+            <h4 class="footer_heading">تسوق</h4>
+            <ul>
+              <li><a href="#">المنتجات المخصصة</a></li>
+              <li><a href="#">الصواني الفاخرة</a></li>
+              <li><a href="#">منتجات الأطفال</a></li>
+              <li><a href="#">للاحتفالات</a></li>
+              <li><a href="#">تشكيلة رمضان الفاخرة</a></li>
+            </ul>
+          </div>
+          <div class="footer_link">
+            <h4 class="footer_heading">حول بستاني</h4>
+            <ul>
+              <li><a href="#">من نحن</a></li>
+              <li><a href="#">اتصل بنا</a></li>
+              <li><a href="#">وظائف</a></li>
+              <li><a href="#">الأسئلة الشائعة</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer_link">
-          <h4 class="footer_heading">حول بستاني</h4>
-          <ul>
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">اتصل بنا</a></li>
-            <li><a href="#">وظائف</a></li>
-            <li><a href="#">الأسئلة الشائعة</a></li>
-          </ul>
-        </div>
-        <div class="footer_link">
+        <div class="footer_link footer_social_link">
           <h4 class="footer_heading">تابعنا</h4>
           <ul class="footer_socail">
             <li>
@@ -1340,10 +1404,11 @@
     <script>
       var swiper = new Swiper(".swipperOne", {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 0,
         loop: true,
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
         autoplay: {
           delay: 5000,
@@ -1359,6 +1424,31 @@
         autoplay: {
           delay: 5000,
         },
+
+        breakpoints: {
+          320: {
+            slidesPerView: 2.5,
+            centeredSlides: true,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 3.3,
+            spaceBetween: 10,
+            centeredSlides: true,
+          },
+          640: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 6,
+            spaceBetween: 15,
+          },
+          1200: {
+            slidesPerView: 8,
+            spaceBetween: 15,
+          },
+        },
       });
     </script>
     <script>
@@ -1369,15 +1459,58 @@
         autoplay: {
           delay: 3000,
         },
+        breakpoints: {
+          320: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          577: {
+            slidesPerView: 5.3,
+            spaceBetween: 10,
+            centeredSlides: true,
+          },
+          768: {
+            slidesPerView: 7.3,
+            spaceBetween: 10,
+            centeredSlides: true,
+          },
+          992: {
+            slidesPerView: 10,
+            spaceBetween: 15,
+          },
+        },
       });
     </script>
     <script>
       var swiperFours = new Swiper(".mySwiper_four", {
         slidesPerView: 2.2,
+        speed: 50000,
         spaceBetween: 0,
         loop: true,
         autoplay: {
-          delay: 6000,
+          delay: 1,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 0.5,
+            spaceBetween: 10,
+          },
+          // when window width is >= 480px
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+          },
+          // when window width is >= 640px
+          678: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 2.2,
+            spaceBetween: 15,
+          },
         },
       });
     </script>
@@ -1424,6 +1557,48 @@
         pagination: {
           el: ".sixExtra_pagi",
           clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".mySwipersm", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: ".smhero_pagi",
+          clickable: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
+
+    <script>
+      var last = new Swiper(".last_slider", {
+        slidesPerView: 5,
+        spaceBetween: 25,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          // when window width is >= 480px
+          577: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
         },
       });
     </script>

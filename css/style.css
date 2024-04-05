@@ -275,7 +275,7 @@ header ul li:hover {
 }
 
 .pslider_box p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -410,6 +410,8 @@ span.lastpara {
   justify-content: center;
   border-radius: 1.8rem;
   height: 100%;
+  padding: 1rem;
+  text-align: center;
 }
 
 .plone_right {
@@ -651,11 +653,15 @@ span.lastpara {
 .discount_right,
 .discount_left {
   position: relative;
+  border-radius: 1.4rem;
+  overflow: hidden;
 }
 
 .discount_right img {
   display: block;
   width: 100%;
+  height: 39rem;
+  object-fit: cover;
 }
 
 .discount_percent p {
@@ -729,15 +735,14 @@ span.lastpara {
 /* -- video area start -- */
 #video {
   position: relative;
-  height: 39.2rem;
-  overflow: hidden;
 }
 
 #video video {
   display: block;
   width: 100%;
   position: relative;
-  top: -15rem;
+  height: 39.2rem;
+  object-fit: cover;
 }
 
 .video_text {
@@ -831,6 +836,8 @@ span.lastpara {
 .discount_left img {
   display: block;
   width: 100%;
+  height: 39rem;
+  object-fit: cover;
 }
 /* -- golden area end -- */
 
@@ -846,12 +853,6 @@ span.lastpara {
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
-}
-
-.customer_list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 2.6rem;
 }
 
 .customer_box img {
@@ -1572,7 +1573,7 @@ button.disabled {
 /* -- card area end -- */
 
 /* -- smheader area start -- */
-.header_wrapper {
+.smheader_wrapper {
   padding: 0px 1.6rem;
   display: flex;
   align-items: center;
@@ -1619,5 +1620,95 @@ button.disabled {
   position: relative;
   z-index: 99;
 }
-
 /* -- smheader area end -- */
+
+/* -- smhero area start -- */
+.smhero_cnt {
+  margin-top: 1rem;
+}
+
+.smhero_cnt h3 {
+  color: #603913;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.smhero_cnt p {
+  color: #603913;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.smhero_cnt p strong {
+  color: #603913;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.smhero_cnt a {
+  display: inline-block;
+  padding: 0.8rem 2.6rem;
+  border-radius: 1rem;
+  background-color: #603913;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.smhero_cnt {
+  padding-bottom: 4rem;
+}
+
+.smhero_pagi {
+  top: initial !important;
+  bottom: 0rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #603913;
+}
+
+#smhero {
+  margin-top: -6.5rem;
+}
+
+.plfive .pltwo_middle {
+  display: block;
+}
+
+.plfive .p1one_wrapper {
+  grid-template-columns: 76.6rem 33rem 68.3rem;
+}
+
+.plfive .pltwo_left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.8rem;
+}
+
+/* -- smhero area end -- */
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: auto;
+}
+
+.footer_link-group {
+  display: flex;
+  column-gap: 20rem;
+}
+
+.footer_link-group .footer_link {
+  width: 50%;
+}
