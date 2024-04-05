@@ -797,8 +797,8 @@
         <div class="cmodal_right_wrapper">
           <div class="cmodal_right">
             <h4 class="text-center">إكتشف أكثر</h4>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper mySwiper five">
+            <div class="swiper-button-prev five_slider_prev"></div>
+            <div class="swiper mySwiper five five_slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="swpiper_img">
@@ -910,7 +910,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next five_slider_next"></div>
           </div>
         </div>
 
@@ -930,7 +930,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-paginationone"></div>
+              <div class="swiper-paginationone six_pagi"></div>
             </div>
             <div class="cmodal_left_cnt">
               <div class="cmheading">
@@ -1049,8 +1049,8 @@
         <div class="cmodal_right_wrapper">
           <div class="cmodal_right">
             <h4 class="text-center">إكتشف أكثر</h4>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper mySwiper five">
+            <div class="swiper-button-prev five_extra_prev"></div>
+            <div class="swiper mySwiper five five_extra">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="swpiper_img">
@@ -1162,14 +1162,14 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next five_extra_next"></div>
           </div>
         </div>
 
         <div class="cmwrapping">
           <div class="cmodal_left">
             <div class="cmodal_left_slider">
-              <div class="swiper mySwiper swipper_six">
+              <div class="swiper mySwiper swipper_sixExtra">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img src="images/ls1.png" alt="" />
@@ -1182,7 +1182,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-paginationone"></div>
+              <div class="swiper-paginationone sixExtra_pagi"></div>
             </div>
             <div class="cmodal_left_cnt">
               <div class="cmheading">
@@ -1383,13 +1383,25 @@
     </script>
 
     <script>
-      var swiperFive = new Swiper(".five", {
+      var swiperFive = new Swiper(".five_slider", {
         direction: "vertical",
         slidesPerView: 3,
         spaceBetween: 0,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".five_slider_next",
+          prevEl: ".five_slider_prev",
+        },
+      });
+    </script>
+
+    <script>
+      var swiperFiveExtra = new Swiper(".five_extra", {
+        direction: "vertical",
+        slidesPerView: 3,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: ".five_extra_next",
+          prevEl: ".five_extra_prev",
         },
       });
     </script>
@@ -1399,7 +1411,18 @@
         slidesPerView: 1,
         spaceBetween: 0,
         pagination: {
-          el: ".swiper-paginationone",
+          el: ".six_pagi",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      var swipersixExtra = new Swiper(".swipper_sixExtra", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+          el: ".sixExtra_pagi",
           clickable: true,
         },
       });

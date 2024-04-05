@@ -1162,7 +1162,7 @@ h4.footer_heading {
   right: inherit;
 }
 
-.cmodal .swiper-button-prev.swiper-button-disabled {
+.cmodal .swiper-button-disabled {
   opacity: 0;
 }
 
