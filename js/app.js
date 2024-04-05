@@ -24,6 +24,7 @@ tigger.forEach((item) => {
 closeModal.forEach((item) => {
   item.addEventListener("click", () => {
     const closeAttr = item.getAttribute("closeM");
+    cartBox.classList.remove("openCart");
 
     cmodal.forEach((citem) => {
       ctimeAttr = citem.getAttribute("id");

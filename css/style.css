@@ -275,7 +275,7 @@ header ul li:hover {
 }
 
 .pslider_box p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -1711,4 +1711,12 @@ button.disabled {
 
 .footer_link-group .footer_link {
   width: 50%;
+}
+.offcanvas_link ul li a img {
+  display: none;
+}
+
+.closeModal img {
+  display: inline-block;
+  width: 10rem;
 }
