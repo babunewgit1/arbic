@@ -69,11 +69,34 @@
                 <li>
                   توصيل إلى
                   <img class="flag" src="images/flag.svg" alt="" /> الرياض
-                  <img class="arrow" src="images/arrow.svg" alt="" />
+                  <img
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="arrow"
+                    src="images/arrow.svg"
+                    alt=""
+                  />
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </li>
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
                 </li>
                 <li><a href="#">English</a></li>
-                <li>
-                  <a href="#"><img src="images/cart.svg" alt="" /></a>
+                <li id="card_btns">
+                  <a href="JavaScript:void(0)"
+                    ><img src="images/cart.svg" alt=""
+                  /></a>
                 </li>
                 <li>
                   <a href="#"><img src="images/login.svg" alt="" />تسجيل</a>
@@ -100,14 +123,16 @@
         </div>
         <div class="smheader_middle">
           <a href="index.html">
-            <img src="images/logo.svg" alt="" />
+            <img src="images/logo.png" alt="" />
           </a>
         </div>
 
         <div class="smheader_left">
           <ul>
-            <li>
-              <a href="#"><img src="images/cartsm.svg" alt="" /></a>
+            <li class="cardsm">
+              <a href="JavaScript:void(0)"
+                ><img src="images/cartsm.svg" alt=""
+              /></a>
             </li>
             <li>
               <a href="#"><img src="images/se.svg" alt="" /></a>
@@ -801,16 +826,38 @@
         </div>
         <div class="footer_visa">
           <ul>
-            <li>
-              <a href="#"
+            <li
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <a href="JavaScript:void(0)"
                 ><img class="world" src="images/world.svg" alt="" />العربية
-                <img src="images/da.svg" alt=""
-              /></a>
+                <img src="images/da.svg" alt="" />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
-            <li>
+            <li
+              id="dropdownMenuButton2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               <a href="#"
                 >المملكة العربية السعودية<img src="images/da.svg" alt=""
               /></a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
           </ul>
           <div class="payment_method">

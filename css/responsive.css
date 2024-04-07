@@ -766,11 +766,12 @@ Small Screen - Mobile
     order: 1;
     margin: auto;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
 
   .footer_link-group {
     order: 2;
-    column-gap: 10rem;
+    column-gap: 7rem;
   }
 
   .footer_visa {
@@ -806,6 +807,7 @@ Small Screen - Mobile
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 2.2rem;
   }
 
   .offcanvas_link ul li a img {
@@ -965,5 +967,39 @@ Small Screen - Mobile
   .cmodal_wrapper {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .smheader_middle img {
+    scale: 1.2;
+  }
+
+  span.discount {
+    font-size: 1.8rem;
+  }
+
+  p.arbtext {
+    font-size: 1.8rem;
+  }
+
+  h4.footer_heading {
+    font-size: 2.2rem;
+  }
+
+  .footer_link ul li a {
+    font-size: 2rem;
+  }
+
+  .footer_visa ul li a {
+    color: #603913;
+    font-size: 2.2rem;
+  }
+
+  .payment_method p {
+    font-size: 2.2rem;
+  }
+  .footer_link ul.footer_socail li a img {
+    display: inline-block;
+
+    width: 3rem;
   }
 }

@@ -45,3 +45,11 @@ cartbtn.forEach((item) => {
 cartClose.addEventListener("click", () => {
   cartBox.classList.remove("openCart");
 });
+
+document.querySelector("#card_btns").addEventListener("click", () => {
+  cartBox.classList.add("openCart");
+});
+
+document.querySelector(".cardsm").addEventListener("click", () => {
+  cartBox.classList.add("openCart");
+});
