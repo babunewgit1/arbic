@@ -1777,3 +1777,157 @@ button.disabled {
 #golden {
   position: relative;
 }
+
+/* -- popup area start -- */
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.popup_wrapper {
+  background-image: url(../images/popbg.png);
+  background-size: 100% 100%;
+  width: 85%;
+  height: 90%;
+  border-radius: 2.4rem;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.popup_right {
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+  padding-top: 20rem;
+}
+
+.popup_right_wrapper {
+  width: 55%;
+  padding-right: 5rem;
+}
+
+.popup_left_wrapper_block {
+  width: 45%;
+  padding-top: 20rem;
+}
+
+.popup_wrapper:after {
+  content: "";
+  display: block;
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../images/color.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.popup_right_img img {
+  display: block;
+  width: 28rem;
+  animation: upAndDown 2s ease-in-out infinite alternate;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.popup_right_cnt h5 {
+  color: #603913;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.popup_left_link ul li img {
+  display: inline-block;
+  width: 7rem;
+  margin-left: 1.6rem;
+}
+
+.popup_left_link ul li {
+  color: #603913;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 5.4rem;
+  cursor: pointer;
+}
+
+.popup_left h5 {
+  color: #603913;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 2.5rem;
+}
+
+.popup_left_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.popup_list_one ul li a {
+  color: #603913;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 2.5rem;
+  transition: all 0.2s ease;
+}
+
+.popup_list_one ul li a:hover {
+  opacity: 0.7;
+}
+
+.popup_right_img {
+  position: relative;
+}
+
+.popup_right_img:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  left: 0;
+  bottom: -16rem;
+  background-image: url(../images/shadow.png);
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.popup_left {
+  display: none;
+}
+
+.box_open {
+  display: block;
+}
+
+.loaded {
+  transform: scale(1) !important;
+  visibility: visible !important;
+}
+
+/* -- popup area end -- */
