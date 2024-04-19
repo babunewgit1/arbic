@@ -1,7 +1,11 @@
+// selector
+
 const tigger = document.querySelectorAll("[handel]");
 const cmodal = document.querySelectorAll(".cmodal");
 const closeModal = document.querySelectorAll(".closeModal");
-const cartbtn = document.querySelectorAll(".cmitem_link button");
+const cartbtn = document.querySelectorAll(".desktopcartbtn");
+const mobileCartbtn = document.querySelectorAll(".mobilecartbtn ");
+const mobilecart = document.querySelector("#mobilecart");
 const cartBox = document.querySelector(".card");
 const cartClose = document.querySelector(".card_heading_left span");
 
@@ -40,6 +44,20 @@ cartbtn.forEach((item) => {
   item.addEventListener("click", () => {
     cartBox.classList.add("openCart");
   });
+});
+
+// update mobile cartBox
+mobileCartbtn.forEach((item) => {
+  item.addEventListener("click", () => {
+    mobilecart.classList.add("openMobileCart");
+  });
+});
+
+// hide mobile cartBox
+mobilecart.addEventListener("click", function (event) {
+  if (event.target.classList.contains("openMobileCart")) {
+    mobilecart.classList.remove("openMobileCart");
+  }
 });
 
 cartClose.addEventListener("click", () => {
