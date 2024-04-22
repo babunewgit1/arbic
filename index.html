@@ -52,7 +52,15 @@
                 >
                   <img src="images/bar.svg" alt="" /> القائمة
                 </li>
-                <li><img src="images/sc.svg" alt="" /> إبدأ البحث</li>
+                <li id="search_boxIcon1" class="position-relative searchions">
+                  <img src="images/sc.svg" alt="" /> إبدأ البحث
+                  <div class="search_box">
+                    <div class="search_box_wrapper">
+                      <input type="text" placeholder="search" />
+                      <button><img src="images/sc.svg" alt="" /></button>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -68,7 +76,15 @@
               <ul>
                 <li>
                   توصيل إلى
-                  <img class="flag" src="images/flag.svg" alt="" /> الرياض
+                  <img
+                    id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="flag"
+                    src="images/flag.svg"
+                    alt=""
+                  />
+                  الرياض
                   <img
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -80,6 +96,20 @@
                   <ul
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </li>
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
                   >
                     <li class="d-block m-0">
                       <a class="dropdown-item" href="#">Action</a>
@@ -134,8 +164,16 @@
                 ><img src="images/cartsm.svg" alt=""
               /></a>
             </li>
-            <li>
-              <a href="#"><img src="images/se.svg" alt="" /></a>
+            <li id="search_boxIcon2" class="position-relative searchions">
+              <a href="JavaScript:void(0)"
+                ><img src="images/se.svg" alt=""
+              /></a>
+              <div class="search_box">
+                <div class="search_box_wrapper">
+                  <input type="text" placeholder="search" />
+                  <button><img src="images/sc.svg" alt="" /></button>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -1031,39 +1069,215 @@
         <div class="offcanvas_link">
           <ul>
             <li>
-              <a href="#"
+              <a linkLTigger="menuOne" href="JavaScript:void(0)"
                 >تشكيلة العيد الفاخرة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuOne" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuTwo" href="JavaScript:void(0)"
                 >تشكيلة رمضان الفاخرة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuTwo" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuThree" href="JavaScript:void(0)"
                 >المنتجات المميزة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuThree" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuFour" href="JavaScript:void(0)"
                 >الصواني الفاخرة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuFour" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuFive" href="JavaScript:void(0)"
                 >المنتجات المخصصة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuFive" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuSix" href="JavaScript:void(0)"
                 >منتجات الأطفال<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuSix" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuSeven" href="JavaScript:void(0)"
                 >منتجات الاحتفالات<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuSeven" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -1878,6 +2092,7 @@
                 <div class="mb_cart_text_heading">
                   <h5>علبة بستاني المميزة أسود كبير</h5>
                   <p>30 حبة / 115 ريال</p>
+                  fuck me
                 </div>
                 <div class="mb_cart_increase">
                   <div class="number_box_wrapping">
@@ -1956,6 +2171,8 @@
     <!-- mobilecart area end -->
 
     <!-- Main jQuery -->
+    <script src="js/inc-dec.js"></script>
+    <script src="js/main_menu_dorpdown.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
 
     <!-- Bootstrap jQuery -->
@@ -2183,39 +2400,6 @@
       });
     </script>
 
-    <script>
-      const incrementBtns = document.querySelectorAll(".increment-btn");
-      const decrementBtns = document.querySelectorAll(".decrement-btn");
-
-      incrementBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const numberElement = btn.nextElementSibling;
-          let currentValue = parseInt(numberElement.textContent);
-          currentValue++;
-          numberElement.textContent = currentValue;
-
-          if (currentValue > 1) {
-            decrementBtns.forEach((decrementBtn) => {
-              decrementBtn.classList.remove("disabled");
-            });
-          }
-        });
-      });
-
-      decrementBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          const numberElement = btn.previousElementSibling;
-          let currentValue = parseInt(numberElement.textContent);
-          if (currentValue > 1) {
-            currentValue--;
-            numberElement.textContent = currentValue;
-          } else {
-            btn.classList.add("disabled");
-          }
-        });
-      });
-    </script>
-
     <!-- popup country selector -->
     <script>
       const countryLink = document.querySelectorAll(".popup_left_link ul li");
@@ -2253,6 +2437,21 @@
           popupWrapper.classList.remove("loaded");
         }
       });
+
+      //hide on link click
+      const linkList = document.querySelectorAll(".popup_list_one ul li a");
+
+      linkList.forEach((item) => {
+        item.addEventListener("click", () => {
+          popupWrapper.classList.remove("loaded");
+        });
+      });
+
+      // handel desktop card
+      heandelCard();
+
+      // handel mobile card
+      handelMobileCart();
     </script>
   </body>
 </html>

@@ -510,6 +510,7 @@ Small Screen - Tablate
   .offcanvas_link ul li a img {
     display: inline-block;
     width: 1.2rem;
+    opacity: 1;
   }
 
   .side_offcanvas.offcanvas.offcanvas-start {
@@ -808,6 +809,19 @@ Small Screen - Tablate
   .cpcnt_price_right_img img {
     width: 6rem;
   }
+
+  .dropwonfource {
+    position: inherit;
+    padding: 2rem 4rem;
+    border: 0;
+  }
+
+  .search_box {
+    width: 60rem;
+    left: 0;
+    right: inherit;
+    transform-origin: left;
+  }
 }
 
 /*
@@ -1031,6 +1045,7 @@ Small Screen - Mobile
   .offcanvas_link ul li a img {
     display: inline-block;
     width: 1.2rem;
+    opacity: 1;
   }
 
   .side_offcanvas.offcanvas.offcanvas-start {
@@ -1345,5 +1360,18 @@ Small Screen - Mobile
 
   .cp_cnt_three_link p {
     display: none;
+  }
+
+  .dropwonfource {
+    position: inherit;
+    padding: 2rem 4rem;
+    border: 0;
+  }
+
+  .search_box {
+    width: 30rem;
+    left: 0;
+    right: inherit;
+    transform-origin: left;
   }
 }

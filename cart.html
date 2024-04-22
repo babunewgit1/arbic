@@ -18,6 +18,13 @@
     <!-- Fav Icon -->
     <link rel="icon" href="images/favicon.ico" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Include Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.rtl.css" />
 
@@ -50,7 +57,15 @@
                 >
                   <img src="images/bar.svg" alt="" /> القائمة
                 </li>
-                <li><img src="images/sc.svg" alt="" /> إبدأ البحث</li>
+                <li id="search_boxIcon1" class="position-relative searchions">
+                  <img src="images/sc.svg" alt="" /> إبدأ البحث
+                  <div class="search_box">
+                    <div class="search_box_wrapper">
+                      <input type="text" placeholder="search" />
+                      <button><img src="images/sc.svg" alt="" /></button>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -66,7 +81,15 @@
               <ul>
                 <li>
                   توصيل إلى
-                  <img class="flag" src="images/flag.svg" alt="" /> الرياض
+                  <img
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="flag"
+                    src="images/flag.svg"
+                    alt=""
+                  />
+                  الرياض
                   <img
                     id="dropdownMenuButton1"
                     data-bs-toggle="dropdown"
@@ -78,6 +101,20 @@
                   <ul
                     class="dropdown-menu"
                     aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </li>
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li class="d-block m-0">
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton2"
                   >
                     <li class="d-block m-0">
                       <a class="dropdown-item" href="#">Action</a>
@@ -132,8 +169,16 @@
                 ><img src="images/cartsm.svg" alt=""
               /></a>
             </li>
-            <li>
-              <a href="#"><img src="images/se.svg" alt="" /></a>
+            <li id="search_boxIcon2" class="position-relative searchions">
+              <a href="JavaScript:void(0)"
+                ><img src="images/se.svg" alt=""
+              /></a>
+              <div class="search_box">
+                <div class="search_box_wrapper">
+                  <input type="text" placeholder="search" />
+                  <button><img src="images/sc.svg" alt="" /></button>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -229,29 +274,47 @@
                     </div>
                   </div>
                   <div class="hiddenArea">
-                    <div id="one" class="cp_cnt_two_block_cnt">
+                    <div id="one" class="cp_cnt_two_block_cnt secondFaq">
                       <div class="cp_cnt_two_block_cnt_map">
                         <img src="images/map1.png" alt="" />
                       </div>
                       <div class="cp_cnt_two_block_cnt_map_details">
-                        <ul>
+                        <ul dir="ltr">
                           <li>
-                            <img src="images/icon1.svg" alt="" />John Smith
+                            <span><img src="images/ci1.png" alt="" /> </span
+                            >Mazen Baroudi
                           </li>
                           <li>
-                            <img src="images/icon2.svg" alt="" />john.s@mail.com
+                            <span><img src="images/ci2.png" /></span
+                            >mazen.baroudi@gmail.com
                           </li>
                           <li>
-                            <img src="images/icon3.svg" alt="" />+966521215478
-                          </li>
-                          <li><img src="images/icon4.svg" alt="" />السعودية</li>
-                          <li>
-                            <img src="images/icon5.svg" alt="" />الرياض، العليا
+                            <span><img src="images/ci3.png" alt="" /></span
+                            >+96170104089
                           </li>
                           <li>
-                            <img src="images/icon6.svg" alt="" />Bldg Name here
+                            <span><img src="images/ci4.png" alt="" /></span
+                            >Lebanon
                           </li>
-                          <li><img src="images/icon7.svg" alt="" />2000</li>
+                          <li>
+                            <span><img src="images/ci5.png" alt="" /></span
+                            >North Lebanon
+                          </li>
+                          <li>
+                            <span><img src="images/ci6.png" alt="" /></span
+                            >Tripoli
+                          </li>
+                          <li>
+                            <span><img src="images/ci7.png" alt="" /></span
+                            >Haret AI Khassa
+                          </li>
+                          <li>
+                            <span><img src="images/ci8.png" alt="" /></span
+                            >Ladkani
+                          </li>
+                          <li>
+                            <span><img src="images/ci9.png" alt="" /></span>3868
+                          </li>
                         </ul>
                       </div>
                       <div class="cp_cnt_two_block_cnt_button">
@@ -277,29 +340,47 @@
                     </div>
                   </div>
                   <div class="hiddenArea">
-                    <div id="two" class="cp_cnt_two_block_cnt">
+                    <div id="two" class="cp_cnt_two_block_cnt secondFaq">
                       <div class="cp_cnt_two_block_cnt_map">
                         <img src="images/map1.png" alt="" />
                       </div>
                       <div class="cp_cnt_two_block_cnt_map_details">
-                        <ul>
+                        <ul dir="ltr">
                           <li>
-                            <img src="images/icon1.svg" alt="" />John Smith
+                            <span><img src="images/ci1.png" alt="" /> </span
+                            >Mazen Baroudi
                           </li>
                           <li>
-                            <img src="images/icon2.svg" alt="" />john.s@mail.com
+                            <span><img src="images/ci2.png" /></span
+                            >mazen.baroudi@gmail.com
                           </li>
                           <li>
-                            <img src="images/icon3.svg" alt="" />+966521215478
-                          </li>
-                          <li><img src="images/icon4.svg" alt="" />السعودية</li>
-                          <li>
-                            <img src="images/icon5.svg" alt="" />الرياض، العليا
+                            <span><img src="images/ci3.png" alt="" /></span
+                            >+96170104089
                           </li>
                           <li>
-                            <img src="images/icon6.svg" alt="" />Bldg Name here
+                            <span><img src="images/ci4.png" alt="" /></span
+                            >Lebanon
                           </li>
-                          <li><img src="images/icon7.svg" alt="" />2000</li>
+                          <li>
+                            <span><img src="images/ci5.png" alt="" /></span
+                            >North Lebanon
+                          </li>
+                          <li>
+                            <span><img src="images/ci6.png" alt="" /></span
+                            >Tripoli
+                          </li>
+                          <li>
+                            <span><img src="images/ci7.png" alt="" /></span
+                            >Haret AI Khassa
+                          </li>
+                          <li>
+                            <span><img src="images/ci8.png" alt="" /></span
+                            >Ladkani
+                          </li>
+                          <li>
+                            <span><img src="images/ci9.png" alt="" /></span>3868
+                          </li>
                         </ul>
                       </div>
                       <div class="cp_cnt_two_block_cnt_button">
@@ -325,29 +406,47 @@
                     </div>
                   </div>
                   <div class="hiddenArea">
-                    <div id="three" class="cp_cnt_two_block_cnt">
+                    <div id="three" class="cp_cnt_two_block_cnt secondFaq">
                       <div class="cp_cnt_two_block_cnt_map">
                         <img src="images/map1.png" alt="" />
                       </div>
                       <div class="cp_cnt_two_block_cnt_map_details">
-                        <ul>
+                        <ul dir="ltr">
                           <li>
-                            <img src="images/icon1.svg" alt="" />John Smith
+                            <span><img src="images/ci1.png" alt="" /> </span
+                            >Mazen Baroudi
                           </li>
                           <li>
-                            <img src="images/icon2.svg" alt="" />john.s@mail.com
+                            <span><img src="images/ci2.png" /></span
+                            >mazen.baroudi@gmail.com
                           </li>
                           <li>
-                            <img src="images/icon3.svg" alt="" />+966521215478
-                          </li>
-                          <li><img src="images/icon4.svg" alt="" />السعودية</li>
-                          <li>
-                            <img src="images/icon5.svg" alt="" />الرياض، العليا
+                            <span><img src="images/ci3.png" alt="" /></span
+                            >+96170104089
                           </li>
                           <li>
-                            <img src="images/icon6.svg" alt="" />Bldg Name here
+                            <span><img src="images/ci4.png" alt="" /></span
+                            >Lebanon
                           </li>
-                          <li><img src="images/icon7.svg" alt="" />2000</li>
+                          <li>
+                            <span><img src="images/ci5.png" alt="" /></span
+                            >North Lebanon
+                          </li>
+                          <li>
+                            <span><img src="images/ci6.png" alt="" /></span
+                            >Tripoli
+                          </li>
+                          <li>
+                            <span><img src="images/ci7.png" alt="" /></span
+                            >Haret AI Khassa
+                          </li>
+                          <li>
+                            <span><img src="images/ci8.png" alt="" /></span
+                            >Ladkani
+                          </li>
+                          <li>
+                            <span><img src="images/ci9.png" alt="" /></span>3868
+                          </li>
                         </ul>
                       </div>
                       <div class="cp_cnt_two_block_cnt_button">
@@ -366,26 +465,124 @@
             <div class="cp_cnt_three">
               <h5>طريقة الدفع</h5>
               <div class="cp_cnt_three_wrapper">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="cthree_text">
-                        <img src="images/thx1.png" alt="" />
-                        <p>بطاقة إئتمان</p>
-                      </div>
-                      <span><img src="images/left.svg" alt="" /></span
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="cthree_text">
-                        <img src="images/thx2.png" alt="" />
-                        <p>Tabby</p>
-                      </div>
-                      <span><img src="images/left.svg" alt="" /></span
-                    ></a>
-                  </li>
-                </ul>
+                <div class="cp_cnt_block" subopen="onef">
+                  <div class="cthree_text">
+                    <img src="images/thx1.png" alt="" />
+                    <p>بطاقة إئتمان</p>
+                  </div>
+                  <span><img src="images/left.svg" alt="" /></span>
+                </div>
+                <div class="hiddenArea">
+                  <div id="onef" class="cp_cnt_two_block_cnt faqSmall">
+                    <div class="cp_cnt_two_block_cnt_map">
+                      <img src="images/map1.png" alt="" />
+                    </div>
+                    <div class="cp_cnt_two_block_cnt_map_details">
+                      <ul dir="ltr">
+                        <li>
+                          <span><img src="images/ci1.png" alt="" /> </span>Mazen
+                          Baroudi
+                        </li>
+                        <li>
+                          <span><img src="images/ci2.png" /></span
+                          >mazen.baroudi@gmail.com
+                        </li>
+                        <li>
+                          <span><img src="images/ci3.png" alt="" /></span
+                          >+96170104089
+                        </li>
+                        <li>
+                          <span><img src="images/ci4.png" alt="" /></span
+                          >Lebanon
+                        </li>
+                        <li>
+                          <span><img src="images/ci5.png" alt="" /></span>North
+                          Lebanon
+                        </li>
+                        <li>
+                          <span><img src="images/ci6.png" alt="" /></span
+                          >Tripoli
+                        </li>
+                        <li>
+                          <span><img src="images/ci7.png" alt="" /></span>Haret
+                          AI Khassa
+                        </li>
+                        <li>
+                          <span><img src="images/ci8.png" alt="" /></span
+                          >Ladkani
+                        </li>
+                        <li>
+                          <span><img src="images/ci9.png" alt="" /></span>3868
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cp_cnt_two_block_cnt_button">
+                      <ul>
+                        <li><a href="#">أضف عنوان</a></li>
+                        <li><a href="#">تعديل</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="cp_cnt_block" subopen="twof">
+                  <div class="cthree_text">
+                    <img src="images/thx2.png" alt="" />
+                    <p>Tabby</p>
+                  </div>
+                  <span><img src="images/left.svg" alt="" /></span>
+                </div>
+                <div class="hiddenArea">
+                  <div id="twof" class="cp_cnt_two_block_cnt faqSmall">
+                    <div class="cp_cnt_two_block_cnt_map">
+                      <img src="images/map1.png" alt="" />
+                    </div>
+                    <div class="cp_cnt_two_block_cnt_map_details">
+                      <ul dir="ltr">
+                        <li>
+                          <span><img src="images/ci1.png" alt="" /> </span>Mazen
+                          Baroudi
+                        </li>
+                        <li>
+                          <span><img src="images/ci2.png" /></span
+                          >mazen.baroudi@gmail.com
+                        </li>
+                        <li>
+                          <span><img src="images/ci3.png" alt="" /></span
+                          >+96170104089
+                        </li>
+                        <li>
+                          <span><img src="images/ci4.png" alt="" /></span
+                          >Lebanon
+                        </li>
+                        <li>
+                          <span><img src="images/ci5.png" alt="" /></span>North
+                          Lebanon
+                        </li>
+                        <li>
+                          <span><img src="images/ci6.png" alt="" /></span
+                          >Tripoli
+                        </li>
+                        <li>
+                          <span><img src="images/ci7.png" alt="" /></span>Haret
+                          AI Khassa
+                        </li>
+                        <li>
+                          <span><img src="images/ci8.png" alt="" /></span
+                          >Ladkani
+                        </li>
+                        <li>
+                          <span><img src="images/ci9.png" alt="" /></span>3868
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cp_cnt_two_block_cnt_button">
+                      <ul>
+                        <li><a href="#">أضف عنوان</a></li>
+                        <li><a href="#">تعديل</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="cp_cnt_three_link">
@@ -524,39 +721,215 @@
         <div class="offcanvas_link">
           <ul>
             <li>
-              <a href="#"
+              <a linkLTigger="menuOne" href="JavaScript:void(0)"
                 >تشكيلة العيد الفاخرة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuOne" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuTwo" href="JavaScript:void(0)"
                 >تشكيلة رمضان الفاخرة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuTwo" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuThree" href="JavaScript:void(0)"
                 >المنتجات المميزة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuThree" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuFour" href="JavaScript:void(0)"
                 >الصواني الفاخرة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuFour" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuFive" href="JavaScript:void(0)"
                 >المنتجات المخصصة<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuFive" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuSix" href="JavaScript:void(0)"
                 >منتجات الأطفال<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuSix" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#"
+              <a linkLTigger="menuSeven" href="JavaScript:void(0)"
                 >منتجات الاحتفالات<img src="images/right.svg" alt=""
               /></a>
+              <ul dropres="menuSeven" class="dropwonfource">
+                <li>
+                  <a href="#"
+                    >علب التراث السعودي <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة الشوكولاتة الرقيقة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة بستاني المميزة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علبة شوكولاتة الورد <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الروشيه الفاخرة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >علب الحشوات الجديدة <img src="images/right.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -564,10 +937,38 @@
     </div>
     <!-- --offcanvas area end-- -->
 
+    <!-- card area start -->
+    <div class="card">
+      <div class="card_wrapper">
+        <div class="card_heading">
+          <div class="card_heading_left">
+            <p>سلّة التسوّق</p>
+            <span><img src="images/close.svg" alt="" />أغلاق</span>
+          </div>
+        </div>
+        <div class="card_product">
+          <div class="cp_one">
+            <div class="cp_one_right">
+              <img src="images/cp1.png" alt="" />
+            </div>
+            <div class="cp_one_left">
+              <p>علبة بستاني المميزة أسود كبير</p>
+              <p>30 حبة / <span> 115 ريال</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="card_btn">
+          <a href="cart.html">الدفع</a>
+          <a href="#">إستمر في التسوق</a>
+        </div>
+      </div>
+    </div>
+    <!-- card area end -->
+
     <script>
       // cart page faq open close
       const openTigger = document.querySelectorAll(".cp_cnt_two_block_heading");
-      const responseBlock = document.querySelectorAll(".cp_cnt_two_block_cnt");
+      const responseBlock = document.querySelectorAll(".secondFaq");
 
       openTigger.forEach((item) => {
         item.addEventListener("click", () => {
@@ -598,16 +999,45 @@
           });
         });
       });
+
+      // cart page 2nd faq open close;
+      const cartfaWrapper = document.querySelectorAll(".cp_cnt_block");
+      const responseFaq = document.querySelectorAll(".faqSmall");
+
+      cartfaWrapper.forEach((item) => {
+        item.addEventListener("click", () => {
+          const cartfaWrapperAttr = item.getAttribute("subopen");
+
+          responseFaq.forEach((resitem) => {
+            const resitemAttr = resitem.getAttribute("id");
+            if (cartfaWrapperAttr === resitemAttr) {
+              resitem.parentElement.previousElementSibling.classList.toggle(
+                "faqOpenclose"
+              );
+              resitem.parentElement.classList.toggle("showfaq");
+            } else {
+              resitem.parentElement.previousElementSibling.classList.remove(
+                "faqOpenclose"
+              );
+              resitem.parentElement.classList.remove("showfaq");
+            }
+          });
+        });
+      });
     </script>
 
+    <script src="js/app.js"></script>
     <script src="js/inc-dec.js"></script>
+    <script src="js/main_menu_dorpdown.js"></script>
     <!-- Main jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
 
     <!-- Bootstrap jQuery -->
     <script src="js/bootstrap.bundle.js"></script>
 
-    <!-- Fontawesome Script -->
-    <script src="https://kit.fontawesome.com/7749c9f08a.js"></script>
+    <script>
+      // handel desktop card
+      heandelCard();
+    </script>
   </body>
 </html>
