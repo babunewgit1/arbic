@@ -1374,4 +1374,14 @@ Small Screen - Mobile
     right: inherit;
     transform-origin: left;
   }
+
+  .card {
+    width: 100%;
+    left: 0;
+    top: 100vh;
+  }
+
+  .openCart {
+    top: 0 !important;
+  }
 }
